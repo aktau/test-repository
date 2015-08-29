@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# version v0.0.8
+# version v0.0.9
 
 # Bla bla
 # Goopo
