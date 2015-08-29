@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# version v0.0.4
+
 # set -e
 set -u
 
