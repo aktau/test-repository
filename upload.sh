@@ -2,6 +2,8 @@
 
 # version v0.0.5
 
+# Bla bla
+
 # set -e
 set -u
 
