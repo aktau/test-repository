@@ -3,6 +3,7 @@
 # version v0.0.5
 
 # Bla bla
+# Goopo
 
 # set -e
 set -u
