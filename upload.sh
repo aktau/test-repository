@@ -32,4 +32,22 @@ github-release $VERBOSE edit \
     --repo $DIR  \
     --tag "v0.0.1" \
     --name "this should not work" \
-    --description "at all..." \
+    --description "at all..." || {
+    echo "edit of non-existing tag didn't work, exellent"
+}
+
+echo "Uploading regular artefact"
+github-release upload \
+    --user aktau \
+    --repo $DIR \
+    --tag $LAST_TAG \
+    --name "upload.sh" \
+    --file upload.sh
+
+echo "Uploading gzipped file"
+gzip < upload.sh | github-release upload \
+    --user aktau \
+    --repo $DIR \
+    --tag $LAST_TAG \
+    --name "upload.sh.gz" \
+    --file -
