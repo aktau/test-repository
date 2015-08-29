@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# version v0.0.4
+# version v0.0.5
 
 # set -e
 set -u
