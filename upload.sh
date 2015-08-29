@@ -51,3 +51,12 @@ gzip < upload.sh | github-release upload \
     --tag $LAST_TAG \
     --name "upload.sh.gz" \
     --file -
+
+echo "Uploading bzipped file with a label"
+bzip2 < upload.sh | github-release upload \
+    --user aktau \
+    --repo $DIR \
+    --tag $LAST_TAG \
+    --name "upload.sh.bz2" \
+    --label "A nice, bzip2'ed file" \
+    --file -
