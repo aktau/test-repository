@@ -60,3 +60,6 @@ bzip2 < upload.sh | github-release upload \
     --name "upload.sh.bz2" \
     --label "A nice, bzip2'ed file" \
     --file -
+
+# github-release release -u aktau -r test-repository -c c22d9e4a2dd8f7
+# --name "commitish" --description "does it even work" --tag v0.43.0
